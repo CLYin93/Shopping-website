@@ -1,0 +1,28 @@
+import { CartService } from '../model/cart/cartService'
+import { CartController } from '../model/cart/cartController'
+import { knex } from '../db'
+
+
+describe('test CartController ', () => {
+	beforeAll(
+		async () =>
+			await knex.migrate
+				.rollback({}, true)
+				.then(() => knex.migrate.latest().then(() => knex.seed.run()))
+	)
+
+	let cartService = new CartService(knex)
+    let cartController = new CartController(cartService)
+
+
+
+    it('add cart increment item ', async () => {
+		let product_id = 1
+		let user_id = 1
+		let result = await cartService.addCart(product_id, user_id)
+		expect(result.totalVolume).toBe(5)
+		expect(result.thisProductVolume).toBe(2)
+	})
+
+
+    })

@@ -1,0 +1,94 @@
+.logo {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  height: 200px;
+}
+
+.logo img {
+  display: flex;
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+/* navBar */
+.buttonbar {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.navVerticalIndex {
+  font-family: "Copperplate", "Microsoft YaHei", "sans serif";
+}
+
+.navbar-toggler {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.navBackgroundColor {
+  background: linear-gradient(to top, rgb(182, 223, 226), rgb(243, 255, 249), rgb(165, 224, 235));
+}
+
+.nav-item {
+  font-family: "Copperplate", "Microsoft YaHei", "sans serif";
+}
+
+li {
+  padding-left: 10px;
+  font-size: large;
+  font-weight: 100px;
+  /* background-color: rgba(243, 229, 168, 0.452); */
+}
+
+li :hover {
+  background-color: aqua;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+/* .navbar-nav {
+
+} */
+/* navBar */
+
+/* account info */
+.account {
+  text-align: left;
+  margin-left: 50px;
+}
+
+.info {
+  margin: 30px;
+}
+
+/* account info */
+.username {
+  padding-left: 40%;
+}
+
+.menWomen {
+  padding-left: 40%;
+}
+
+.mailAdress {
+  padding-left: 40%;
+}
+
+.updatedResult {
+  background-color: greenyellow;
+}
+
+.noShow {
+  display: none;
+}
+/* account info */

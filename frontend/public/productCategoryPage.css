@@ -1,0 +1,95 @@
+/* navBar */
+.buttonbar {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.navVerticalIndex {
+  font-family: "Copperplate", "Microsoft YaHei", "sans serif";
+}
+
+.navbar-toggler {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.navBackgroundColor {
+  background: linear-gradient(
+    to top,
+    rgb(182, 223, 226),
+    rgb(243, 255, 249),
+    rgb(165, 224, 235)
+  );
+}
+
+.nav-item {
+  font-family: "Copperplate", "Microsoft YaHei", "sans serif";
+}
+
+li {
+  padding-left: 10px;
+  font-size: large;
+  font-weight: 100px;
+  /* background-color: rgba(243, 229, 168, 0.452); */
+}
+
+li :hover {
+  background-color: aqua;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+/* .navbar-nav {
+
+} */
+/* navBar */
+.categoryProducts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  box-sizing: border-box;
+  position: relative;
+  background-color: rgb(91, 88, 88);
+  margin: 20px;
+  box-shadow: 10px 10px 5px 0px black;
+  width: 22rem;
+  height: 22rem;
+}
+
+.product p {
+  padding: 0.4rem;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  color: white;
+  margin: 0;
+}
+
+.productList button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: aqua;
+}
+
+.categoryProductImg > img {
+  width: 100%;
+  height: 14vh;
+}
+
+.searchProduct {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product img {
+  width: 100%;
+  height: 14vh;
+}

@@ -1,0 +1,66 @@
+.loginResgisterPage {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 60%;
+  background-color: rgb(0, 0, 0, 0.8);
+  color: red;
+  pointer-events: all;
+  z-index: 3;
+}
+
+.getOutLoginPage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.googleLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100px;
+  background: red;
+  font-size: x-large;
+}
+
+.enterArea {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.enterArea textarea {
+  height: 20px;
+}
+
+.SubmitBtn {
+  position: relative;
+  height: 30px;
+  top: 5px;
+}
+
+#loginAndResgisterReport {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 60%;
+  background-color: rgb(0, 0, 0, 0.8);
+  color: red;
+  pointer-events: all;
+  z-index: 3;
+}
+
+.noshow {
+  display: none !important;
+}
+
+.loginInfor input[type="password"] {
+  display: block;
+}

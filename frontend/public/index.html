@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="loginPage.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Shopping now</title>
+  </head>
+
+  <body>
+    <div class="container text-center">
+      <div class="logo"><img src="./ProductImg/LOGO.png" /></div>
+      <!-- enter cart -->
+      <div>
+        <a id="enterCart" href="/cartPage.html">你的購物車</a>
+      </div>
+      <!-- enter cart -->
+      <div class="row">
+        <div class="col">
+          <!-- meue bar -->
+          <nav class="navbar navbar-expand-lg buttonbar navBackgroundColor">
+            <div class="container-fluid">
+              <!--<a class="navbar-brand" href="#">Navbar</a>-->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navVerticalIndex">目錄 </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      id="homePage"
+                      class="nav-link active"
+                      aria-current="page"
+                      href="/"
+                      >主頁
+                    </a>
+                  </li>
+                  <li id="superMarket" class="nav-item">
+                    <a
+                      style="color: green"
+                      class="nav-link"
+                      href="/productCategoryPage.html?categoriesId=1"
+                    >
+                      超級市場
+                    </a>
+                  </li>
+
+                  <li id="healthCare" class="nav-item">
+                    <a
+                      style="color: orange"
+                      class="nav-link"
+                      href="/productCategoryPage.html?categoriesId=2"
+                    >
+                      健康管理
+                    </a>
+                  </li>
+                  <li id="skinCareAndMakeUp" class="nav-item">
+                    <a
+                      style="color: rgb(197, 59, 231)"
+                      class="nav-link"
+                      href="/productCategoryPage.html?categoriesId=3"
+                    >
+                      護膚/化妝
+                    </a>
+                  </li>
+                  <li id="motherAndBaby" class="nav-item">
+                    <a
+                      style="color: rgb(199, 116, 148)"
+                      class="nav-link"
+                      href="/productCategoryPage.html?categoriesId=4"
+                    >
+                      育兒用品
+                    </a>
+                  </li>
+                  <li id="pets" class="nav-item">
+                    <a
+                      style="color: rgb(156, 214, 170)"
+                      class="nav-link"
+                      href="/productCategoryPage.html?categoriesId=5"
+                    >
+                      寵物用品
+                    </a>
+                  </li>
+                  <li id="gadgetsAndElectronics" class="nav-item">
+                    <a
+                      style="color: rgb(193, 221, 67)"
+                      class="nav-link"
+                      href="/productCategoryPage.html?categoriesId=6"
+                    >
+                      電子產品
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link login">登入/註冊</a>
+                  </li>
+                  <li id="userData" class="nav-item noshow">
+                    <a
+                      style="color: rgb(5, 5, 5)"
+                      class="nav-link"
+                      href="/userFace.html"
+                    >
+                      帳戶資料
+                    </a>
+                  </li>
+                  <li id="collection" class="nav-item noshow">
+                    <a
+                      style="color: rgb(5, 5, 5)"
+                      class="nav-link"
+                      href="/collection.html"
+                    >
+                      我的收藏
+                    </a>
+                  </li>
+                </ul>
+                <div id="AISearch">
+                  <a href="/searchAi.html"
+                    ><img src="./ProductImg/AISearch.jpg"
+                  /></a>
+                  <p>AI Search</p>
+                </div>
+                <form class="d-flex" role="search" action="./search.html">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                    name="keyWord"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <!-- meue bar -->
+        </div>
+        <!-- login/resgister page-->
+        <!-- <div class="loginAndResgister noshow"> -->
+        <div class="loginResgisterPage noshow">
+          <button type="button" class="btn btn-dark getOutLoginPage">X</button>
+          <div>
+            <div class="resgister">註冊</div>
+            <!-- action='/resgister' method='POST' -->
+            <form id="resgisterForm">
+              <div class="loginInfor">
+                <label class="enterArea">account:</label>
+                <input type="userName" name="account" />
+
+                <label class="enterArea">password:</label>
+                <input type="password" name="password" />
+                <button type="submit" class="SubmitBtn" id="resgisterSubmit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+          <div>
+            <div class="logIn">登入</div>
+            <form id="loginForm">
+              <div class="loginInfor">
+                <label class="enterArea">account:</label>
+                <input type="userName" name="account" />
+
+                <label class="enterArea">password:</label>
+                <input type="password" name="password" />
+                <button type="submit" class="SubmitBtn" id="loginSubmit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- </div> -->
+        <div id="loginAndResgisterReport" class="noshow">login/resgister</div>
+        <!-- login/resgister page-->
+        <div id="myCarousel" class="carouselpage"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <!-- heat sales products -->
+          <div class="heatSales">
+            <div class="heatSaleList">
+              <div class="hotItem"><img src="./ProductImg/Hot_Item.png" /></div>
+
+              <div class="heatSaleProducts"></div>
+            </div>
+          </div>
+          <!-- heat sales products -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <!-- heat sales products -->
+          <div class="recommandedProduct">
+            <div class="recommandedProductList">
+              <div class="sugItem">
+                <img src="./ProductImg/Suggust_Item.png" />
+              </div>
+              <div class="recommandedProducts"></div>
+            </div>
+          </div>
+          <!-- heat sales products -->
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="indexCaroucel.js"></script>
+    <script src="loginPage.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+.cartMark {
+  background: red;
+  color: rgb(55, 206, 25);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+#cartProductBanner {
+  background: rgba(65, 60, 60, 0.8);
+}
+
+#priceCalculatorInfo {
+  background: rgba(65, 60, 60, 0.8);
+  display: flex;
+  justify-content: space-around;
+}
+
+.deliveryFeeDisplay {
+  display: flex;
+  justify-content: space-around;
+}
+
+#addCartReminder {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 60%;
+  background-color: rgb(0, 0, 0, 0.8);
+  color: red;
+  pointer-events: all;
+  z-index: 3;
+}
+
+#clientBills {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(0, 78, 187, 0.8);
+}
+
+.bill {
+  width: 20%;
+  margin: 20px;
+  box-shadow: 10px 10px 5px 0px black;
+  background-color: rgba(190, 179, 179, 0.8);
+}
+
+.removeThisBill {
+  float: right;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,6 @@
+sanic==22.6.2
+sanic-routing==22.3.0
+
+tensorflow==2.9.1
+tensorflow-estimator==2.9.0
+tensorflow-io-gcs-filesystem==0.26.0
